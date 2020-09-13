@@ -1,0 +1,193 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Bus_ISA_16bit J1
+U 1 1 5F55CB3F
+P 2750 3950
+F 0 "J1" H 2750 6717 50  0000 C CNN
+F 1 "Bus_ISA_16bit" H 2750 6626 50  0000 C CNN
+F 2 "isastm:ISA16" H 2750 4000 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 2750 4000 50  0001 C CNN
+	1    2750 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F5604B9
+P 1850 6350
+F 0 "#PWR?" H 1850 6100 50  0001 C CNN
+F 1 "GND" H 1700 6300 50  0000 C CNN
+F 2 "" H 1850 6350 50  0001 C CNN
+F 3 "" H 1850 6350 50  0001 C CNN
+	1    1850 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F561F50
+P 1850 4450
+F 0 "#PWR?" H 1850 4200 50  0001 C CNN
+F 1 "GND" H 1700 4400 50  0000 C CNN
+F 2 "" H 1850 4450 50  0001 C CNN
+F 3 "" H 1850 4450 50  0001 C CNN
+	1    1850 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F56224F
+P 1500 2350
+F 0 "#PWR?" H 1500 2100 50  0001 C CNN
+F 1 "GND" H 1505 2177 50  0000 C CNN
+F 2 "" H 1500 2350 50  0001 C CNN
+F 3 "" H 1500 2350 50  0001 C CNN
+	1    1500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F562491
+P 1600 1450
+F 0 "#PWR?" H 1600 1200 50  0001 C CNN
+F 1 "GND" H 1600 1500 50  0000 C CNN
+F 2 "" H 1600 1450 50  0001 C CNN
+F 3 "" H 1600 1450 50  0001 C CNN
+	1    1600 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 4450 2050 4450
+Wire Wire Line
+	1850 6350 2050 6350
+$Comp
+L power:+5V #PWR?
+U 1 1 5F563770
+P 1850 6150
+F 0 "#PWR?" H 1850 6000 50  0001 C CNN
+F 1 "+5V" H 1700 6200 50  0000 C CNN
+F 2 "" H 1850 6150 50  0001 C CNN
+F 3 "" H 1850 6150 50  0001 C CNN
+	1    1850 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F564A3C
+P 1500 1650
+F 0 "#PWR?" H 1500 1500 50  0001 C CNN
+F 1 "+5V" H 1300 1700 50  0000 C CNN
+F 2 "" H 1500 1650 50  0001 C CNN
+F 3 "" H 1500 1650 50  0001 C CNN
+	1    1500 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 6150 2050 6150
+$Comp
+L power:-5V #PWR?
+U 1 1 5F565103
+P 1500 1850
+F 0 "#PWR?" H 1500 1950 50  0001 C CNN
+F 1 "-5V" H 1300 1900 50  0000 C CNN
+F 2 "" H 1500 1850 50  0001 C CNN
+F 3 "" H 1500 1850 50  0001 C CNN
+	1    1500 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1850 2050 1850
+$Comp
+L power:-12V #PWR?
+U 1 1 5F5660B6
+P 1500 2050
+F 0 "#PWR?" H 1500 2150 50  0001 C CNN
+F 1 "-12V" H 1300 2100 50  0000 C CNN
+F 2 "" H 1500 2050 50  0001 C CNN
+F 3 "" H 1500 2050 50  0001 C CNN
+	1    1500 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5F566E3C
+P 1500 2250
+F 0 "#PWR?" H 1500 2100 50  0001 C CNN
+F 1 "+12V" H 1300 2300 50  0000 C CNN
+F 2 "" H 1500 2250 50  0001 C CNN
+F 3 "" H 1500 2250 50  0001 C CNN
+	1    1500 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2250 2050 2250
+Wire Wire Line
+	1500 2050 2050 2050
+Wire Wire Line
+	1500 1650 2050 1650
+Wire Wire Line
+	1500 2350 2050 2350
+Wire Wire Line
+	1600 1450 2050 1450
+Text Label 1650 1550 0    50   ~ 0
+RESET
+Text Label 1650 1750 0    50   ~ 0
+IRQ2
+Text Label 1650 1950 0    50   ~ 0
+DRQ2
+Text Label 1650 2450 0    50   ~ 0
+~SMEMW
+Text Label 1650 3250 0    50   ~ 0
+~REFRESH
+Wire Wire Line
+	1650 3250 2050 3250
+Text Label 1650 2550 0    50   ~ 0
+~SMEMR
+Text Label 1650 2650 0    50   ~ 0
+~IOW
+Text Label 1650 2750 0    50   ~ 0
+~IOR
+Wire Wire Line
+	1650 2450 2050 2450
+Wire Wire Line
+	1650 2550 2050 2550
+Wire Wire Line
+	1650 2650 2050 2650
+Wire Wire Line
+	1650 2750 2050 2750
+Text Label 1650 2850 0    50   ~ 0
+~DACK3
+Text Label 1650 2950 0    50   ~ 0
+DRQ3
+Wire Wire Line
+	1650 2850 2050 2850
+Wire Wire Line
+	1650 2950 2050 2950
+Text Label 1650 3050 0    50   ~ 0
+~DACK1
+Text Label 1650 3150 0    50   ~ 0
+DRQ1
+Wire Wire Line
+	1650 3050 2050 3050
+Wire Wire Line
+	1650 3150 2050 3150
+Wire Wire Line
+	1650 1950 2050 1950
+Wire Wire Line
+	1650 1550 2050 1550
+Wire Wire Line
+	1650 1750 2050 1750
+NoConn ~ 2050 2150
+$EndSCHEMATC
