@@ -1689,69 +1689,69 @@ Wire Wire Line
 $Comp
 L Device:Crystal Y?
 U 1 1 5FB0B2CB
-P 1450 4750
+P 1300 4550
 AR Path="/5F65970E/5FB0B2CB" Ref="Y?"  Part="1" 
 AR Path="/5FB0B2CB" Ref="Y2"  Part="1" 
-F 0 "Y2" V 1450 4700 50  0000 L CNN
-F 1 "8 MHz" V 1650 4650 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm" H 1450 4750 50  0001 C CNN
-F 3 "~" H 1450 4750 50  0001 C CNN
-F 4 "C115962" V 1450 4750 50  0001 C CNN "LCSC"
-	1    1450 4750
-	0    1    -1   0   
+F 0 "Y2" V 1300 4500 50  0000 L CNN
+F 1 "8 MHz" V 1500 4450 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm" H 1300 4550 50  0001 C CNN
+F 3 "~" H 1300 4550 50  0001 C CNN
+F 4 "C115962" V 1300 4550 50  0001 C CNN "LCSC"
+	1    1300 4550
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5FB0B2F2
-P 1200 4900
+P 1050 4400
 AR Path="/5F65970E/5FB0B2F2" Ref="C?"  Part="1" 
 AR Path="/5FB0B2F2" Ref="C5"  Part="1" 
-F 0 "C5" V 1350 4950 50  0000 L CNN
-F 1 "20p" V 1350 4750 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 1238 4750 50  0001 C CNN
-F 3 "~" H 1200 4900 50  0001 C CNN
-F 4 "C1554" H 1200 4900 50  0001 C CNN "LCSC"
-	1    1200 4900
-	0    -1   1    0   
+F 0 "C5" V 1200 4450 50  0000 L CNN
+F 1 "20p" V 1200 4250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1088 4250 50  0001 C CNN
+F 3 "~" H 1050 4400 50  0001 C CNN
+F 4 "C1554" H 1050 4400 50  0001 C CNN "LCSC"
+	1    1050 4400
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5FB0B2F9
-P 1200 4600
+P 1050 4700
 AR Path="/5F65970E/5FB0B2F9" Ref="C?"  Part="1" 
 AR Path="/5FB0B2F9" Ref="C6"  Part="1" 
-F 0 "C6" V 1350 4450 50  0000 L CNN
-F 1 "20p" V 1350 4650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 1238 4450 50  0001 C CNN
-F 3 "~" H 1200 4600 50  0001 C CNN
-F 4 "C1554" H 1200 4600 50  0001 C CNN "LCSC"
-	1    1200 4600
-	0    1    -1   0   
+F 0 "C6" V 1200 4550 50  0000 L CNN
+F 1 "20p" V 1200 4750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1088 4550 50  0001 C CNN
+F 3 "~" H 1050 4700 50  0001 C CNN
+F 4 "C1554" H 1050 4700 50  0001 C CNN "LCSC"
+	1    1050 4700
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1050 4900 1050 4750
+	900  4400 900  4550
 $Comp
 L power:GND #PWR?
 U 1 1 5FB0B300
-P 1000 4750
+P 850 4550
 AR Path="/5F65970E/5FB0B300" Ref="#PWR?"  Part="1" 
 AR Path="/5FB0B300" Ref="#PWR0123"  Part="1" 
-F 0 "#PWR0123" H 1000 4500 50  0001 C CNN
-F 1 "GND" V 1005 4622 50  0000 R CNN
-F 2 "" H 1000 4750 50  0001 C CNN
-F 3 "" H 1000 4750 50  0001 C CNN
-	1    1000 4750
-	0    1    -1   0   
+F 0 "#PWR0123" H 850 4300 50  0001 C CNN
+F 1 "GND" V 855 4422 50  0000 R CNN
+F 2 "" H 850 4550 50  0001 C CNN
+F 3 "" H 850 4550 50  0001 C CNN
+	1    850  4550
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1000 4750 1050 4750
-Connection ~ 1050 4750
+	850  4550 900  4550
+Connection ~ 900  4550
 Wire Wire Line
-	1050 4750 1050 4600
+	900  4550 900  4700
 Wire Wire Line
-	1350 4900 1450 4900
+	1200 4400 1300 4400
 Wire Wire Line
-	1350 4600 1450 4600
+	1200 4700 1300 4700
 $Comp
 L Logic_LevelTranslator:SN74AVC8T245PW U9
 U 1 1 5F6A4B20
@@ -2795,10 +2795,7 @@ Wire Wire Line
 	3150 13650 3600 13650
 Wire Wire Line
 	3150 13750 3600 13750
-Connection ~ 1450 4600
-Wire Wire Line
-	2050 4700 1700 4700
-Connection ~ 1450 4900
+Connection ~ 1300 4700
 $Comp
 L Interface_USB:USB3343 U15
 U 1 1 6461C7D0
@@ -2810,12 +2807,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/334x.pdf" H 13700 2500 50  
 	1    13200 2200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1700 4700 1700 4900
-Wire Wire Line
-	1450 4900 1700 4900
-Wire Wire Line
-	1450 4600 2050 4600
 Text Label 5550 4600 2    50   ~ 0
 OTG_HS_ULPI_STP
 Wire Wire Line
@@ -4535,32 +4526,12 @@ Text Label 1700 6000 0    50   ~ 0
 LV_A6
 Text Label 1700 5900 0    50   ~ 0
 LV_A5
-Text Label 1700 5800 0    50   ~ 0
-LV_A4
-Text Label 1700 5700 0    50   ~ 0
-LV_A3
-Text Label 1700 5600 0    50   ~ 0
-LV_A2
-Text Label 1700 5500 0    50   ~ 0
-LV_A1
-Text Label 1700 5400 0    50   ~ 0
-LV_A0
 Wire Wire Line
 	1700 5100 2050 5100
 Wire Wire Line
 	1700 5200 2050 5200
 Wire Wire Line
 	1700 5300 2050 5300
-Wire Wire Line
-	1700 5400 2050 5400
-Wire Wire Line
-	1700 5500 2050 5500
-Wire Wire Line
-	1700 5600 2050 5600
-Wire Wire Line
-	1700 5700 2050 5700
-Wire Wire Line
-	1700 5800 2050 5800
 Wire Wire Line
 	1700 5900 2050 5900
 Wire Wire Line
@@ -4648,25 +4619,17 @@ Wire Wire Line
 Text Label 5300 1200 2    50   ~ 0
 LV_DRQ1
 Wire Wire Line
-	4850 1800 5300 1800
+	2050 4900 1600 4900
 Wire Wire Line
-	5300 1900 4850 1900
+	1600 4800 2050 4800
 Wire Wire Line
 	4850 2000 5300 2000
-Text Label 5300 1800 2    50   ~ 0
+Text Label 1600 4900 0    50   ~ 0
 ~LV_DACK1
-Text Label 5300 1900 2    50   ~ 0
+Text Label 1600 4800 0    50   ~ 0
 ~LV_DACK2
 Text Label 5300 2000 2    50   ~ 0
 ~LV_DACK3
-Text Label 5300 5000 2    50   ~ 0
-LV_TC
-Wire Wire Line
-	5300 5000 4850 5000
-Text Label 5300 5100 2    50   ~ 0
-LV_CLK
-Wire Wire Line
-	5300 5100 4850 5100
 Text Label 5300 5200 2    50   ~ 0
 ~LV_NOWS
 Wire Wire Line
@@ -4683,10 +4646,6 @@ Text Label 5450 6900 2    50   ~ 0
 LV_IRQ6
 Text Label 5450 7000 2    50   ~ 0
 LV_IRQ7
-Text Label 5450 4300 2    50   ~ 0
-~LV_IO_CH_CK
-Wire Wire Line
-	5450 3100 4850 3100
 Wire Wire Line
 	5450 6500 4850 6500
 Wire Wire Line
@@ -4700,8 +4659,6 @@ Wire Wire Line
 Wire Wire Line
 	5450 7000 4850 7000
 Wire Wire Line
-	5450 4300 4850 4300
-Wire Wire Line
 	4850 3500 5500 3500
 Wire Wire Line
 	4850 3600 5500 3600
@@ -4709,8 +4666,6 @@ Wire Wire Line
 	4850 3700 5500 3700
 Wire Wire Line
 	4850 3800 5500 3800
-Text Label 5450 3100 2    50   ~ 0
-LV_IO_CH_RDY
 Text Label 1800 7200 0    50   ~ 0
 LED1
 Text Label 1800 7300 0    50   ~ 0
@@ -5359,4 +5314,53 @@ $EndComp
 Wire Wire Line
 	18400 11900 18450 11900
 Connection ~ 18450 11900
+Text Label 11450 2000 0    50   ~ 0
+USB_HS+
+Text Label 11450 1800 0    50   ~ 0
+USB_HS-
+Wire Wire Line
+	1300 4400 1550 4400
+Wire Wire Line
+	1550 4400 1550 4600
+Wire Wire Line
+	1550 4600 2050 4600
+Connection ~ 1300 4400
+Wire Wire Line
+	1300 4700 2050 4700
+Text Label 1600 5000 0    50   ~ 0
+LV_TC
+Wire Wire Line
+	1600 5000 2050 5000
+Text Label 5200 8500 2    50   ~ 0
+LV_A3
+Text Label 5200 8400 2    50   ~ 0
+LV_A2
+Text Label 5200 8300 2    50   ~ 0
+LV_A1
+Text Label 5200 8200 2    50   ~ 0
+LV_A0
+Wire Wire Line
+	5200 8200 4850 8200
+Wire Wire Line
+	5200 8300 4850 8300
+Wire Wire Line
+	5200 8400 4850 8400
+Wire Wire Line
+	5200 8500 4850 8500
+Text Label 1600 6600 0    50   ~ 0
+LV_CLK
+Wire Wire Line
+	1600 6600 2050 6600
+Text Label 5200 8600 2    50   ~ 0
+LV_A4
+Wire Wire Line
+	5200 8600 4850 8600
+Text Label 1450 6900 0    50   ~ 0
+~LV_IO_CH_CK
+Wire Wire Line
+	1450 6900 2050 6900
+Wire Wire Line
+	1450 7000 2050 7000
+Text Label 1450 7000 0    50   ~ 0
+LV_IO_CH_RDY
 $EndSCHEMATC
