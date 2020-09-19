@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name SDRAM_Micron)(type Legacy)(uri ${KIPRJMOD}/SDRAM_Micron.lib)(options "")(descr ""))
+  (lib (name Connector_TagConnect)(type Legacy)(uri ${KIPRJMOD}/Connector_TagConnect.lib)(options "")(descr ""))
+)
