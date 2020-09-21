@@ -4486,11 +4486,11 @@ Wire Wire Line
 	1650 3900 2050 3900
 Wire Wire Line
 	1650 4000 2050 4000
-Text Label 1700 6100 0    50   ~ 0
+Text Label 5200 5300 2    50   ~ 0
 LV_A7
-Text Label 1700 6000 0    50   ~ 0
+Text Label 5200 5200 2    50   ~ 0
 LV_A6
-Text Label 1700 5900 0    50   ~ 0
+Text Label 5200 5100 2    50   ~ 0
 LV_A5
 Wire Wire Line
 	1700 5100 2050 5100
@@ -4499,11 +4499,11 @@ Wire Wire Line
 Wire Wire Line
 	1700 5300 2050 5300
 Wire Wire Line
-	1700 5900 2050 5900
+	5200 5100 4850 5100
 Wire Wire Line
-	1700 6000 2050 6000
+	5200 5200 4850 5200
 Wire Wire Line
-	1700 6100 2050 6100
+	5200 5300 4850 5300
 Text Label 5150 6100 2    50   ~ 0
 LV_A15
 Text Label 5150 6000 2    50   ~ 0
@@ -4566,14 +4566,14 @@ Text Label 5500 3500 2    50   ~ 0
 ~LV_SMEMW
 Text Label 1600 6600 0    50   ~ 0
 LV_DRQ2
-Text Label 5300 5200 2    50   ~ 0
+Text Label 5300 2200 2    50   ~ 0
 LV_DRQ3
 Wire Wire Line
 	4850 2000 5300 2000
 Wire Wire Line
 	1600 6600 2050 6600
 Wire Wire Line
-	4850 5200 5300 5200
+	4850 2200 5300 2200
 Text Label 5300 2000 2    50   ~ 0
 LV_DRQ1
 Wire Wire Line
@@ -4594,22 +4594,18 @@ Wire Wire Line
 	5300 1400 4850 1400
 Text Label 5450 2100 2    50   ~ 0
 LV_IRQ2
-Text Label 1450 8700 0    50   ~ 0
+Text Label 5450 7400 2    50   ~ 0
 LV_IRQ4
-Text Label 1450 8600 0    50   ~ 0
+Text Label 5450 7500 2    50   ~ 0
 LV_IRQ5
-Text Label 1450 5800 0    50   ~ 0
-LV_IRQ6
 Text Label 5450 7000 2    50   ~ 0
 LV_IRQ7
 Wire Wire Line
 	5450 2100 4850 2100
 Wire Wire Line
-	1450 8700 2050 8700
+	5450 7400 4850 7400
 Wire Wire Line
-	1450 8600 2050 8600
-Wire Wire Line
-	1450 5800 2050 5800
+	5450 7500 4850 7500
 Wire Wire Line
 	5450 7000 4850 7000
 Wire Wire Line
@@ -5325,10 +5321,10 @@ Text Label 5400 2700 2    50   ~ 0
 LV_ALE
 Wire Wire Line
 	5400 2700 4850 2700
-Text Label 1450 8800 0    50   ~ 0
+Text Label 5450 4400 2    50   ~ 0
 LV_IRQ3
 Wire Wire Line
-	1450 8800 2050 8800
+	5450 4400 4850 4400
 Wire Wire Line
 	4850 6600 5400 6600
 Text Label 5400 6600 2    50   ~ 0
@@ -5387,4 +5383,48 @@ Text Label 1450 8900 0    50   ~ 0
 CONTROL3_DIR
 Wire Wire Line
 	2050 8900 1450 8900
+Text Label 5450 7600 2    50   ~ 0
+LV_IRQ6
+Wire Wire Line
+	5450 7600 4850 7600
+Wire Wire Line
+	2050 8800 1450 8800
+Text Label 1450 8800 0    50   ~ 0
+~SPARE2_OE
+Wire Wire Line
+	2050 8700 1450 8700
+Text Label 1450 8700 0    50   ~ 0
+SPARE2_DIR
+Text Label 1550 6100 0    50   ~ 0
+~ADDRESS_OE
+Wire Wire Line
+	1550 6100 2050 6100
+Wire Wire Line
+	2050 6000 1550 6000
+Text Label 1550 6000 0    50   ~ 0
+ADDRESS_DIR
+Wire Wire Line
+	2050 5900 1550 5900
+Text Label 1550 5900 0    50   ~ 0
+~IRQ_OE
+Wire Wire Line
+	2050 8600 1450 8600
+Text Label 1450 8600 0    50   ~ 0
+IRQ_DIR
+Wire Wire Line
+	4850 4300 5500 4300
+Text Label 5500 4300 2    50   ~ 0
+SPARE1_DIR
+Text Label 1450 5800 0    50   ~ 0
+~CONTROL2_OE
+Wire Wire Line
+	1450 5800 2050 5800
+Wire Wire Line
+	2050 5700 1450 5700
+Text Label 1450 5700 0    50   ~ 0
+CONTROL2_DIR
+Wire Wire Line
+	2050 5400 1450 5400
+Text Label 1450 5400 0    50   ~ 0
+~SPARE1_OE
 $EndSCHEMATC
