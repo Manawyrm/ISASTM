@@ -1,4 +1,4 @@
-update=Di 22 Sep 2020 13:34:33 CEST
+update=Di 22 Sep 2020 14:19:11 CEST
 version=1
 last_client=kicad
 [general]
@@ -245,3 +245,13 @@ uViaDrill=0.1
 dPairWidth=0.09
 dPairGap=0.4
 dPairViaGap=0.25
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=gerbers/RevA/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
