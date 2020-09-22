@@ -4821,8 +4821,6 @@ Wire Wire Line
 	15600 13500 15500 13500
 Connection ~ 16850 13300
 Wire Wire Line
-	17750 14600 17750 14650
-Wire Wire Line
 	17750 14550 17750 14650
 $Comp
 L power:GND #PWR?

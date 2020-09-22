@@ -5425,4 +5425,17 @@ Wire Wire Line
 	2050 5400 1450 5400
 Text Label 1450 5400 0    50   ~ 0
 ~SPARE1_OE
+$Comp
+L Connector:TestPoint TP?
+U 1 1 625A8D11
+P 21850 10600
+F 0 "TP?" H 21908 10718 50  0000 L CNN
+F 1 "TestPoint" H 21908 10627 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 22050 10600 50  0001 C CNN
+F 3 "~" H 22050 10600 50  0001 C CNN
+	1    21850 10600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21850 10600 21850 10700
 $EndSCHEMATC
