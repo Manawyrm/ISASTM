@@ -9,7 +9,7 @@ ISASTM is an ISA host using a STM32H743 CPU, 32 MiB SDRAM and USB 2.0 Full-Speed
 It can enable ISA cards to be used inside a VM or even emulate an x86 PC internally with an external ISA bus. 
 
 The card is designed to be used with an ISA backplane, which supplies power and connects the ISA slots.  
-The design is optimized for automated assembly at [JLCPCB](https://jlcpcb.com). 
+The design is optimized for automated assembly at [JLCPCB](https://jlcpcb.com/DDE). 
 
 ### Errata Rev. A
 - Signal integrity issues, level shifters seem to drive the bus too hard. Maybe 33R series resistance.
